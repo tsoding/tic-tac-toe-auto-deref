@@ -13,3 +13,7 @@ $ patch ./tccgen.c < ../tcc.patch
 $ ./configure && make && make install && cd ..
 $ tcc -o main main.c && ./main
 ```
+
+## Screencast
+
+[![thumbnail](./thumbnail.png)](https://www.youtube.com/watch?v=yKI-VOBBFu8)
