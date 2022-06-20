@@ -1,13 +1,5 @@
 --- ./tcc-0.9.27/tccgen.c	2017-12-17 15:27:05.000000000 +0700
 +++ ./tcc-0.9.27-patched/tccgen.c	2022-06-10 23:53:17.869447393 +0700
-@@ -18,6 +18,7 @@
-  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-  */
- 
-+#include <assert.h>
- #include "tcc.h"
- 
- /********************************************************/
 @@ -5115,8 +5116,13 @@
          } else if (tok == '.' || tok == TOK_ARROW || tok == TOK_CDOUBLE) {
              int qualifiers;
